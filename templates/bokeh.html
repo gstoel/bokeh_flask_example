@@ -1,18 +1,22 @@
-<html>
-	<body>
-	<h1>Bokeh chart</h1>
-	here I want the bokeh chart to show, with the color {{ col }} for the line.
-	<br>
-	<br>
-	<br>
-	******* BOKEH CHART *******
-	<br>
-	<br>
-	<br>
-	<ul>
-		<li>Plot <a href=/plot/green>green</a> line
-		<li>Plot <a href=/plot/black>black</a> line
-		<li>Plot <a href=/plot/red>red</a> line
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+        <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.9.1.min.css" type="text/css" />
+        <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.9.1.min.js"></script>
+  </head>
+  <body>
+      {{ div | safe }}
+      {{ script | safe }}
+
+      <br>
+      Change color of line to:<br>
+      <ul>
+	      <li><a href=/plot/green>green</a>
+	      <li><a href=/plot/red>red</a>
+	      <li><a href=/plot/blue>blue</a>
 	</ul>
-	</body>
+  </body>
 </html>
